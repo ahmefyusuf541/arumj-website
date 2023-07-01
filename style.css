@@ -1,0 +1,149 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: beige;
+}
+
+.nav {
+    background-color: skyblue;
+    color: white;
+    position: fixed;
+    top: 0;
+    font-size: 2em;
+    z-index: 1;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0 1em ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    color: #fff;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 20%;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: bisque;
+    color: blueviolet;
+    border-left: 20px blue solid;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 5px 5px 5px blue;
+}
+
+.basmalah,
+.peace {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background-color: darkgoldenrod;
+    border-radius: 12px;
+}
+
+#phone:invalid {
+    border: 2px solid red;
+    background-color: red;
+    animation: shake .5s infinite;
+}
+
+@keyframes shake {
+    25%,
+    75% {
+        translate: 6px 0px;
+    }
+    50% {
+        translate: -6px 0px;
+    }
+}
+
+.option {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0,0.3);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px darkgrey solid;
+    color: #fff;
+    box-shadow: 5px 5px 5px #000;
+}
+
+a {
+    color:blue;
+}
+
+fieldset {
+    margin-bottom: 10px;
+    padding: 10px;
+    /* border: 2px solid #654; */
+    background-color: #aaf;
+    border-radius: 12px;
+}
+
+legend {
+    color: #2116b9;
+    /* border: 1px solid #321; */
+    background-color: bisque;
+    border-radius: 12px;
+    padding: 5px;
+    width: auto;
+}
+
+.center {
+    color: blue;
+    font-weight: 900;
+    border: 1px solid #321;
+    background-color: bisque;
+    text-align: center;
+    border-radius: 12px;
+}
+
+th {
+    color: blue;
+    text-shadow: 2px 2px 3px red;
+    background-color: #aaf;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: beige;
+}
+
+.notification {
+    z-index: 1;
+    background-color: #321;
+    color: #aaf;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: fixed;
+    bottom: -50px;
+    transition: transform 0.7s ease-in-out;
+}
+
+.notification p {
+    margin: 0;
+}
+
+.notification.show {
+    transform: translateY(-50px);
+}

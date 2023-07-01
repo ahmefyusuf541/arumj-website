@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script.js"></script>
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/pw/AMWts8DQMisA4PMFBnZhk9NrP4MvBM4SwlfLQ1KA_nQ3QCP6GcLEoZ9svZKOCsmw_KdtVaqAXjK3OyO9EX9ZNRGWawRr9S-jtMOwbdp6I6xAluRbeV8GnBljD3HhpUJgY57k1lqBH1U52a3zE79gKA8mrdWf=w512-h410-s-no?authuser=0" type="image/x-icon">
+    <title>Foormii galmee</title><style>
+
+top {
+    background-color: skyblue;
+    color: white;
+    position: fixed;
+    top: 0;
+    font-size: 2em;
+    z-index: 1;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0 1em ;
+    display: flex;
+    justify-content: space-between;
+}
+
+top a {
+    color: #fff;
+}</style>
+</head>
+
+<body class="container">
+    <top>
+        <a href="index.html">
+            <i class="fa fa-home"></i></a>
+        <a href="#menu">
+            <i class="fa fa-bars"></i></a>
+    </top><br><br><br>
+    <div class="row">
+        <div class="col-md-4 option">
+            <fieldset>
+                <legend>Maqaa fi lakkoofsa bilbilaa</legend>
+                <label for="name">Maqaa : </label>
+                <input type="text" id="name" placeholder="Maqaa keessan galchaa..."><br>
+                <label for="phone">lakkoofsa bilbilaa  : </label>
+                <input type="tel" id="phone" pattern="[0-9]*" placeholder="lakkoofsa bilbilaa keessan galchaa..."><br>
+                <label for="">saala  : </label>
+                <input type="radio" name="sex" id="male">
+                <label for="male">Dhiira</label>
+                <input type="radio" name="sex" id="female">
+                <label for="female">dhalaa</label>
+            </fieldset>
+        </div>
+        <div class="col-md-4 option">
+            <fieldset>
+                <legend>Dormii</legend>
+                <label for="ground">G + :</label>
+                <select id="ground">
+                    <option></option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+            </select><br>
+                <label for="block">block : </label>
+                <select id="block">
+                    <option></option>
+                    <option id="a">A</option>
+                    <option id="b">B</option>
+                    <option id="c">C</option>
+                    <option id="d">D</option>
+                </select><br>
+                <label for="room">Room : </label>
+                <select id="room">  
+                <option></option>      
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>TV room</option>
+            </select>
+            </fieldset>
+        </div>
+        <div class="col-md-4 option">
+            <fieldset>
+                <legend>Dippaartmantii</legend>
+                <label for="department">Dippaartmantii ፡ </label>
+                <select id="department">
+                    <option></option>
+                    <optgroup label="College FB">
+                        <option>Accounting</option>
+                        <option>Economics</option>
+                        <option>Logistics</option>
+                        <option>Management</option>
+                        <option>Marketing</option>
+                        <option>Tourism</option>
+                        <option>MIS</option>
+                        <option>ITIM</option>
+                    </optgroup>
+                    <optgroup label="Other social">
+                        <option>Afaan Oromoo</option>
+                        <option>Geography</option>
+                        <option>Sociology</option>
+                    </optgroup>
+                    <optgroup label="Educational and behavioural scince">
+                        <option>Leadership</option>
+                        <option>Adult Education</option>
+                    </optgroup>
+                    <optgroup label="College of Health">
+                        <option>Medicine</option>
+                        <option>Anstexia</option>
+                        <option>HO</option>
+                        <option>Pharmacy</option>
+                        <option>Medical lab</option>
+                        <option>Nursing</option>
+                        <option>Midwfery</option>
+                    </optgroup>
+                    <optgroup label="Natutal and copmutational">
+                        <option>Computer Scince</option>
+                        <option>IT</option>
+                        <option>Statistics</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <button type="button" class="btn btn-warning" id="register" onclick="register('afaan oromoo')">Galmaa'aa</button>
+        </div>
+    </div>
+    <div id="notification" class="notification">
+        <p></p>
+    </div>
+    <div class="row bg-secondary" id="menu">
+        <div class="col-md-6">
+            <p>
+                Sagantaawwan
+            </p>
+            <ul type="circle">
+                <li><a href="qirats.html">Sagantaa Qiraatii</a></li>
+                <li><a href="terawih_program.html">Sagantaa salaata taraawiihaa</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <p>Hojiiwwan</p>
+            <ul>
+                <li><a href="about_remedan.html">Waa'ee Ram    adaanaa</a></li>
+                <li><a href="sectors.html">Seektaroota argachuuf</a></li>
+                <li><a href="quizes.html">Gaaffii fi deebii irratti hirmaachuuf</a></li>
+                <li><a href="form.html">Foormii guutuuf</a></li>
+                <li><a href="support.html">gargaarsa mallaqa gochuuf</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
